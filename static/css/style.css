@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal overflow */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -34,9 +35,10 @@ body.dark-mode {
     max-width: 600px;
     backdrop-filter: blur(10px);
     margin-bottom: 50px;
-    /* Adjust padding to accommodate ads */
-    padding-left: 20px; /* Reduced space for left ad */
-    padding-right: 20px; /* Reduced space for right ad */
+    position: relative;
+    z-index: 2; /* Ensure content is above ads */
+    padding-left: 20px; /* Adjusted padding for left ad */
+    padding-right: 20px; /* Adjusted padding for right ad */
 }
 
 /* Dark mode container */
@@ -282,7 +284,7 @@ body.dark-mode .footer {
     top: 0;
     width: 100px;
     height: 100vh;
-    z-index: 9999;
+    z-index: 1; /* Ads behind content */
 }
 
 .ad-left {
