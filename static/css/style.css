@@ -34,6 +34,8 @@ body.dark-mode {
     max-width: 600px;
     backdrop-filter: blur(10px);
     margin-bottom: 50px;
+    padding-left: 120px; /* Space for left ad */
+    padding-right: 120px; /* Space for right ad */
 }
 
 /* Dark mode container */
@@ -231,29 +233,6 @@ body.dark-mode .footer {
     text-decoration: underline;
 }
 
-/* Ads on the left and right edges - Small size */
-.ads-left, .ads-right {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1000;
-    display: block;
-    width: 100px; /* Small ad width */
-    height: 100px; /* Small ad height */
-}
-
-/* Left side ad */
-.ads-left {
-    left: 0;
-    padding-left: 10px; /* Add space from the edge */
-}
-
-/* Right side ad */
-.ads-right {
-    right: 0;
-    padding-right: 10px; /* Add space from the edge */
-}
-
 /* Mobile-friendly adjustments */
 @media (max-width: 600px) {
     .container {
@@ -294,9 +273,21 @@ body.dark-mode .footer {
         top: 10px;
         right: 10px;
     }
+}
 
-    .ads-left, .ads-right {
-        width: 80px;  /* Smaller ad size for mobile */
-        height: 80px; /* Smaller ad height for mobile */
-    }
+/* Ad positioning */
+.ad-left, .ad-right {
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.ad-left {
+    left: 0;
+}
+
+.ad-right {
+    right: 0;
 }
