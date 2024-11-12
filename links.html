@@ -3,66 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="static/images/pfp.png" type="image/png">
-    <meta property="og:title" content="ItzDavid's Links">
-    <meta property="og:description" content="Keep up to date with my shit">
-    <meta property="og:image" content="static/images/banner.png">
-    <meta property="og:url" content="https://itzdavidwastaken.github.io/links">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ItzDavid's Links">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ItzDavid's Links">
-    <meta name="twitter:description" content="Keep up to date with my shit">
-    <meta name="twitter:image" content="static/images/banner.png">
-    <meta name="twitter:url" content="https://itzdavidwastaken.github.io/links">
-    <title>ItzDavid's Links</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links</title>
+    <!-- Link to CSS inside static/css -->
     <link rel="stylesheet" href="static/css/links.css">
+    <!-- Link to JS inside static/js -->
     <script src="static/js/script.js" defer></script>
 </head>
 <body>
     <div class="top-nav">
         <a href="/" class="home-button">
+            <!-- Link to image inside static/images -->
             <img src="static/images/pfp.png" alt="Home" class="home-image">
         </a>
         <a href="/videos" class="videos-button">Videos</a>
         <a href="/links" class="videos-button">Links</a>
     </div>
+
+    <!-- Main Container -->
     <div class="container">
         <header>
             <h1>My Links</h1>
             <p>Here are all my social media and contact links!</p>
         </header>
+
+        <!-- Links Section -->
         <div class="links">
             <a href="https://www.youtube.com/@Itz_David" class="link-button" target="_blank">
                 <img src="static/images/yt_icon1.png" alt="Main YouTube Channel">
                 Main YouTube Channel
             </a>
+
             <a href="https://www.youtube.com/@NinjaBend" class="link-button" target="_blank">
                 <img src="static/images/yt_icon2.png" alt="Second YouTube Channel">
                 Second YouTube Channel
             </a>
+
             <a href="https://www.tiktok.com/@1tzdav1d" class="link-button" target="_blank">
                 <img src="static/images/tiktok_icon.png" alt="TikTok Account">
                 TikTok Account
             </a>
+
             <a href="https://discord.gg/6qrRdQydvA" class="link-button" target="_blank">
                 <img src="static/images/discord_icon.png" alt="Discord Server">
                 Discord Server
             </a>
+
             <a href="https://twitter.com/ItzDavidIsTaken" class="link-button" target="_blank">
                 <img src="static/images/twitter_icon.png" alt="Twitter">
                 Twitter
             </a>
+
             <a href="https://streamelements.com/itz_david/tip" class="link-button" target="_blank">
                 <img src="static/images/donate_icon.png" alt="Donate">
                 Donate
             </a>
-            <a href="https://paypal.me/ItzDavid?" class="link-button" target="_blank">
-                <img src="static/images/paypal_icon.png" alt="PayPal">
-                PayPal
+
+            <a href="https://www.fiverr.com/itzdavidistaken" class="link-button" target="_blank">
+                <img src="static/images/fiverr_icon.png" alt="Fiverr Profile">
+                Fiverr Profile
+            </a>
+
+            <a href="mailto:itzdavidbusiness@gmail.com" class="link-button" target="_blank">
+                <img src="static/images/email_icon.png" alt="Email Address">
+                Email Address
             </a>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="contact-info">
             <h3>Contact Information</h3>
@@ -70,6 +79,24 @@
             <p>Twitter: <a href="https://twitter.com/ItzDavidIsTaken" target="_blank">ItzDavidIsTaken</a></p>
         </div>
     </footer>
+
+    <!-- Theme Toggle Button -->
     <button id="theme-toggle">🌙</button>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const themeToggleButton = document.getElementById('theme-toggle');
+
+        themeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // Change the icon based on the current theme
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggleButton.textContent = '🌙☀️'; // Sun icon for light mode
+            } else {
+                themeToggleButton.textContent = '☀️'; // Moon icon for dark mode
+            }
+        });
+    </script>
 </body>
 </html>
