@@ -34,8 +34,9 @@ body.dark-mode {
     max-width: 600px;
     backdrop-filter: blur(10px);
     margin-bottom: 50px;
-    padding-left: 120px; /* Space for left ad */
-    padding-right: 120px; /* Space for right ad */
+    /* Adjust padding to accommodate ads */
+    padding-left: 20px; /* Reduced space for left ad */
+    padding-right: 20px; /* Reduced space for right ad */
 }
 
 /* Dark mode container */
