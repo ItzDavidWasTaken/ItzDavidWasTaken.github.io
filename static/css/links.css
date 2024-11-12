@@ -5,15 +5,16 @@
     box-sizing: border-box;
 }
 
-/* General styling for body and content */
+/* Body and main container */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure full height */
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #7a4bff, #1d42a1);
     color: #333;
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -22,14 +23,16 @@ body.dark-mode {
     color: #fff;
 }
 
-/* Main content container */
+/* Main container styling */
 .container {
-    flex: 1;  /* This ensures the content fills the space */
     text-align: center;
+    background-color: #fff;
     padding: 40px;
     border-radius: 15px;
-    background-color: #fff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
 }
 
 /* Dark mode container */
@@ -157,7 +160,7 @@ body.dark-mode #theme-toggle {
     background-color: #6b3bd2;
 }
 
-/* Footer Styling (Now a normal section) */
+/* Footer Styling */
 .footer {
     width: 100%;
     background-color: #fff;
@@ -165,10 +168,12 @@ body.dark-mode #theme-toggle {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     border-top: 3px solid #4f2a99;
 }
 
-/* Dark mode footer */
 body.dark-mode .footer {
     background-color: #333;
     color: #fff;
