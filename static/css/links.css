@@ -1,0 +1,243 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main container */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #7a4bff, #1d42a1);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    color: #fff;
+}
+
+/* Main container styling */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+}
+
+/* Dark mode container */
+body.dark-mode .container {
+    background-color: #333;
+}
+
+/* Header styles */
+header h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 22px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Dark mode header */
+body.dark-mode header h1,
+body.dark-mode header p {
+    color: #fff;
+}
+
+/* Links section styles */
+.links {
+    margin-top: 30px;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    background-color: #4f2a99;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    margin: 12px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.link-button:hover {
+    background-color: #6b3bd2;
+    transform: scale(1.05);
+}
+
+/* Toggle Button styles */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode #theme-toggle {
+    color: #f4f4f4;
+}
+
+/* Navigation buttons at the top */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.home-button {
+    display: inline-block;
+}
+
+.home-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.home-image:hover {
+    transform: scale(1.1);
+}
+
+.videos-button {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4f2a99;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+}
+
+.videos-button:hover {
+    background-color: #6b3bd2;
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 3px solid #4f2a99;
+}
+
+body.dark-mode .footer {
+    background-color: #333;
+    color: #fff;
+    border-top: 3px solid #6b3bd2;
+}
+
+.footer .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer .contact-info p {
+    font-size: 18px;
+}
+
+.footer .contact-info a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .link-button {
+        font-size: 18px;
+        padding: 10px 15px;
+        width: 90%;
+    }
+
+    .home-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .videos-button {
+        font-size: 16px;
+        width: 90px;
+    }
+
+    .footer .contact-info h3 {
+        font-size: 20px;
+    }
+
+    .footer .contact-info p {
+        font-size: 16px;
+    }
+
+    #theme-toggle {
+        font-size: 20px;
+    }
+}
