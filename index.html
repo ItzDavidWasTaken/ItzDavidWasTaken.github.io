@@ -3,49 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="static/images/pfp.png" type="image/png">
-    <meta property="og:title" content="ItzDavid's Home Page">
-    <meta property="og:description" content="Keep up to date with my stuff">
-    <meta property="og:image" content="https://itzdavidwastaken.github.io/static/images/banner.png">
-    <meta property="og:url" content="https://itzdavidwastaken.github.io">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ItzDavid's Page">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ItzDavid's Home Page">
-    <meta name="twitter:description" content="Keep up to date with my stuff">
-    <meta name="twitter:image" content="https://itzdavidwastaken.github.io/static/images/banner.png">
-    <meta name="twitter:url" content="https://itzdavidwastaken.github.io">
-    <title>ItzDavid's Page</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links</title>
+    <link rel="stylesheet" href="static/css/links.css">
     <script src="static/js/script.js" defer></script>
 </head>
 <body>
     <div class="top-nav">
-        <a href="/" class="home-button"><img src="static/images/pfp.png" alt="Home" class="home-image"></a>
+        <a href="/" class="home-button">
+            <img src="static/images/pfp.png" alt="Home" class="home-image">
+        </a>
         <a href="/videos" class="videos-button">Videos</a>
         <a href="/links" class="videos-button">Links</a>
     </div>
+
+    <!-- Main Container -->
     <div class="container">
         <header>
-            <h1>ItzDavid's Home Page</h1>
-            <p>Welcome to my world! Get to know me and stay updated.</p>
-            <img src="static/images/banner.png" alt="Banner" class="banner">
+            <h1>My Links</h1>
+            <p>Here are all my social media and contact links!</p>
         </header>
-        <div class="social-links">
-            <button onclick="window.location.href='https://twitter.com/ItzDavidIsTaken'">Twitter</button>
-            <button onclick="window.location.href='https://discord.gg/6qrRdQydvA'">Discord</button>
-        </div>
-        <div class="about-me">
-            <h2>About Me</h2>
-            <p>I'm a YouTuber and developer learning to code with Python and sharing my journey with you.</p>
+
+        <!-- Links Section -->
+        <div class="links">
+            <a href="https://www.youtube.com/@Itz_David" class="link-button" target="_blank">
+                <img src="static/images/yt_icon1.png" alt="Main YouTube Channel">
+                Main YouTube Channel
+            </a>
+
+            <a href="https://www.youtube.com/@NinjaBend" class="link-button" target="_blank">
+                <img src="static/images/yt_icon2.png" alt="Second YouTube Channel">
+                Second YouTube Channel
+            </a>
+
+            <a href="https://www.tiktok.com/@1tzdav1d" class="link-button" target="_blank">
+                <img src="static/images/tiktok_icon.png" alt="TikTok Account">
+                TikTok Account
+            </a>
+
+            <a href="https://discord.gg/6qrRdQydvA" class="link-button" target="_blank">
+                <img src="static/images/discord_icon.png" alt="Discord Server">
+                Discord Server
+            </a>
+
+            <a href="https://twitter.com/ItzDavidIsTaken" class="link-button" target="_blank">
+                <img src="static/images/twitter_icon.png" alt="Twitter">
+                Twitter
+            </a>
+
+            <a href="https://streamelements.com/itz_david/tip" class="link-button" target="_blank">
+                <img src="static/images/donate_icon.png" alt="Donate">
+                Donate
+            </a>
+
+            <a href="https://www.fiverr.com/itzdavidistaken" class="link-button" target="_blank">
+                <img src="static/images/fiverr_icon.png" alt="Fiverr Profile">
+                Fiverr Profile
+            </a>
+
+            <a href="mailto:itzdavidbusiness@gmail.com" class="link-button" target="_blank">
+                <img src="static/images/email_icon.png" alt="Email Address">
+                Email Address
+            </a>
         </div>
     </div>
-    <div class="footer">
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="contact-info">
-            <h3>Contact Me</h3>
-            <p>Email: itzdavid@gmail.com</p>
-            <p><a href="https://twitter.com/ItzDavidIsTaken" target="_blank">Follow me on Twitter</a></p>
+            <h3>Contact Information</h3>
+            <p>Email: itzdavidbusiness@gmail.com</p>
+            <p>Twitter: <a href="https://twitter.com/ItzDavidIsTaken" target="_blank">ItzDavidIsTaken</a></p>
         </div>
-    </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙</button>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const themeToggleButton = document.getElementById('theme-toggle');
+
+        themeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // Change the icon based on the current theme
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggleButton.textContent = '🌙☀️'; // Sun icon for light mode
+            } else {
+                themeToggleButton.textContent = '☀️'; // Moon icon for dark mode
+            }
+        });
+    </script>
 </body>
 </html>
