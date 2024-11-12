@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Links</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/links.css') }}">
-    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <!-- Link to CSS inside static/css -->
+    <link rel="stylesheet" href="static/css/links.css">
+    <!-- Link to JS inside static/js -->
+    <script src="static/js/script.js" defer></script>
 </head>
 <body>
     <div class="top-nav">
         <a href="/" class="home-button">
-            <img src="{{ url_for('static', filename='images/pfp.png') }}" alt="Home" class="home-image">
+            <!-- Link to image inside static/images -->
+            <img src="static/images/pfp.png" alt="Home" class="home-image">
         </a>
         <a href="/videos" class="videos-button">Videos</a>
         <a href="/links" class="videos-button">Links</a>
@@ -27,42 +30,42 @@
         <!-- Links Section -->
         <div class="links">
             <a href="https://www.youtube.com/@Itz_David" class="link-button" target="_blank">
-                <img src="{{ url_for('static', filename='images/yt_icon1.png') }}" alt="Main YouTube Channel">
+                <img src="static/images/yt_icon1.png" alt="Main YouTube Channel">
                 Main YouTube Channel
             </a>
 
             <a href="https://www.youtube.com/@NinjaBend" class="link-button" target="_blank">
-                <img src="{{ url_for('static', filename='images/yt_icon2.png') }}" alt="Second YouTube Channel">
+                <img src="static/images/yt_icon2.png" alt="Second YouTube Channel">
                 Second YouTube Channel
             </a>
 
             <a href="https://www.tiktok.com/@1tzdav1d" class="link-button" target="_blank">
-                <img src="{{ url_for('static', filename='images/tiktok_icon.png') }}" alt="TikTok Account">
+                <img src="static/images/tiktok_icon.png" alt="TikTok Account">
                 TikTok Account
             </a>
 
             <a href="https://discord.gg/6qrRdQydvA" class="link-button" target="_blank">
-                <img src="{{ url_for('static', filename='images/discord_icon.png') }}" alt="Discord Server">
+                <img src="static/images/discord_icon.png" alt="Discord Server">
                 Discord Server
             </a>
 
             <a href="https://twitter.com/ItzDavidIsTaken" class="link-button" target="_blank">
-                <img src="{{ url_for('static', filename='images/twitter_icon.png') }}" alt="Twitter">
+                <img src="static/images/twitter_icon.png" alt="Twitter">
                 Twitter
             </a>
 
             <a href="https://streamelements.com/itz_david/tip" class="link-button" target="_blank">
-                <img src="{{ url_for('static', filename='images/donate_icon.png') }}" alt="Donate">
+                <img src="static/images/donate_icon.png" alt="Donate">
                 Donate
             </a>
 
             <a href="https://www.fiverr.com/itzdavidistaken" class="link-button" target="_blank">
-                <img src="{{ url_for('static', filename='images/fiverr_icon.png') }}" alt="Fiverr Profile">
+                <img src="static/images/fiverr_icon.png" alt="Fiverr Profile">
                 Fiverr Profile
             </a>
 
             <a href="mailto:itzdavidbusiness@gmail.com" class="link-button" target="_blank">
-                <img src="{{ url_for('static', filename='images/email_icon.png') }}" alt="Email Address">
+                <img src="static/images/email_icon.png" alt="Email Address">
                 Email Address
             </a>
         </div>
