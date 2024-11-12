@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Links</title>
-    <link rel="stylesheet" href="static/css/links.css">
+    <title>YouTube Video Previews</title>
+    <link rel="stylesheet" href="static/css/videos.css">
     <script src="static/js/script.js" defer></script>
 </head>
 <body>
@@ -14,57 +13,33 @@
             <img src="static/images/pfp.png" alt="Home" class="home-image">
         </a>
         <a href="/videos" class="videos-button">Videos</a>
-        <a href="/links" class="videos-button">Links</a>
+        <a href="/links" class="videos-button">Links</a> <!-- Same class as Videos button -->
     </div>
 
-    <!-- Main Container -->
     <div class="container">
         <header>
-            <h1>My Links</h1>
-            <p>Here are all my social media and contact links!</p>
+            <h1>My Latest YouTube Videos</h1>
+            <p>Check out the latest videos from my channels!</p>
         </header>
 
-        <!-- Links Section -->
-        <div class="links">
-            <a href="https://www.youtube.com/@Itz_David" class="link-button" target="_blank">
-                <img src="static/images/yt_icon1.png" alt="Main YouTube Channel">
-                Main YouTube Channel
-            </a>
+        <div class="video-gallery">
+            <!-- Embed YouTube videos -->
+            <div class="video-preview">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/iHvkS-3k2Qo" title="Dumbest Game Ever?" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Recommended video</h3>
+            </div>
 
-            <a href="https://www.youtube.com/@NinjaBend" class="link-button" target="_blank">
-                <img src="static/images/yt_icon2.png" alt="Second YouTube Channel">
-                Second YouTube Channel
-            </a>
+            <div class="video-preview">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/XNPT2dbyXj0" title="Most Recent Upload" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Latest Video</h3>
+            </div>
 
-            <a href="https://www.tiktok.com/@1tzdav1d" class="link-button" target="_blank">
-                <img src="static/images/tiktok_icon.png" alt="TikTok Account">
-                TikTok Account
-            </a>
-
-            <a href="https://discord.gg/6qrRdQydvA" class="link-button" target="_blank">
-                <img src="static/images/discord_icon.png" alt="Discord Server">
-                Discord Server
-            </a>
-
-            <a href="https://twitter.com/ItzDavidIsTaken" class="link-button" target="_blank">
-                <img src="static/images/twitter_icon.png" alt="Twitter">
-                Twitter
-            </a>
-
-            <a href="https://streamelements.com/itz_david/tip" class="link-button" target="_blank">
-                <img src="static/images/donate_icon.png" alt="Donate">
-                Donate
-            </a>
-
-            <a href="https://www.fiverr.com/itzdavidistaken" class="link-button" target="_blank">
-                <img src="static/images/fiverr_icon.png" alt="Fiverr Profile">
-                Fiverr Profile
-            </a>
-
-            <a href="mailto:itzdavidbusiness@gmail.com" class="link-button" target="_blank">
-                <img src="static/images/email_icon.png" alt="Email Address">
-                Email Address
-            </a>
+            <div class="video-preview">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/kYAtqhcC72E" title="Face Reveal!!" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Face Reveal!!!</h3>
+            </div>
+            
+            <!-- Add more videos as needed -->
         </div>
     </div>
 
@@ -76,24 +51,23 @@
             <p>Twitter: <a href="https://twitter.com/ItzDavidIsTaken" target="_blank">ItzDavidIsTaken</a></p>
         </div>
     </footer>
-
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle">🌙</button>
+    
+    <!-- Toggle Button for Dark/Light Mode -->
+    <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
 
     <!-- Dark Mode Toggle Script -->
     <script>
-        const themeToggleButton = document.getElementById('theme-toggle');
-
-        themeToggleButton.addEventListener('click', () => {
+        function toggleTheme() {
             document.body.classList.toggle('dark-mode');
 
             // Change the icon based on the current theme
+            const themeToggleButton = document.getElementById('theme-toggle');
             if (document.body.classList.contains('dark-mode')) {
                 themeToggleButton.textContent = '🌙☀️'; // Sun icon for light mode
             } else {
                 themeToggleButton.textContent = '☀️'; // Moon icon for dark mode
             }
-        });
+        }
     </script>
 </body>
 </html>
