@@ -231,13 +231,15 @@ body.dark-mode .footer {
     text-decoration: underline;
 }
 
-/* Ads on the left and right edges */
+/* Ads on the left and right edges - Small size */
 .ads-left, .ads-right {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
     display: block;
+    width: 100px; /* Small ad width */
+    height: 100px; /* Small ad height */
 }
 
 /* Left side ad */
@@ -294,6 +296,7 @@ body.dark-mode .footer {
     }
 
     .ads-left, .ads-right {
-        display: none; /* Hide ads on smaller screens */
+        width: 80px;  /* Smaller ad size for mobile */
+        height: 80px; /* Smaller ad height for mobile */
     }
 }
