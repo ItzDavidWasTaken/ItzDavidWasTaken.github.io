@@ -234,7 +234,7 @@ body.dark-mode .footer {
 /* Ads on the left and right edges */
 .ads-left, .ads-right {
     position: fixed;
-    top: 25%;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
     display: block;
