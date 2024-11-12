@@ -170,41 +170,39 @@ body.dark-mode #theme-toggle {
     color: #f4f4f4;
 }
 
-/* Footer Styling */
-.footer {
+/* Footer-like section */
+.footer-section {
     width: 100%;
     background-color: #fff;
     color: #333;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    margin-top: 20px;
     border-top: 3px solid #4f2a99;
 }
 
-/* Dark mode footer */
-body.dark-mode .footer {
+/* Dark mode footer-like section */
+body.dark-mode .footer-section {
     background-color: #333;
     color: #fff;
     border-top: 3px solid #6b3bd2;
 }
 
-.footer .contact-info h3 {
+.footer-section .contact-info h3 {
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.footer .contact-info p {
+.footer-section .contact-info p {
     font-size: 16px;
 }
 
-.footer .contact-info a {
+.footer-section .contact-info a {
     color: #ffcc00;
     text-decoration: none;
 }
 
-.footer .contact-info a:hover {
+.footer-section .contact-info a:hover {
     text-decoration: underline;
 }
 
@@ -237,8 +235,8 @@ body.dark-mode .footer {
         font-size: 20px;
     }
 
-    .footer .contact-info h3,
-    .footer .contact-info p {
+    .footer-section .contact-info h3,
+    .footer-section .contact-info p {
         font-size: 14px;
     }
 }
