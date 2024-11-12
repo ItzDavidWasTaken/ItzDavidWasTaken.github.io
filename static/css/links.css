@@ -5,17 +5,15 @@
     box-sizing: border-box;
 }
 
-/* Body and main container */
+/* General styling for body and content */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #7a4bff, #1d42a1);
-    color: #333;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    min-height: 100vh; /* Ensure full height */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7a4bff, #1d42a1);
+    color: #333;
+    overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -24,17 +22,14 @@ body.dark-mode {
     color: #fff;
 }
 
-/* Main container styling */
+/* Main content container */
 .container {
+    flex: 1;  /* This ensures the content fills the space */
     text-align: center;
-    background-color: #fff;
     padding: 40px;
     border-radius: 15px;
+    background-color: #fff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 600px;
-    backdrop-filter: blur(10px);
-    margin-bottom: 50px; /* Ensure content scrolls above footer-like section */
 }
 
 /* Dark mode container */
@@ -162,39 +157,40 @@ body.dark-mode #theme-toggle {
     background-color: #6b3bd2;
 }
 
-/* Footer-like section */
-.footer-section {
+/* Footer section */
+.footer {
     width: 100%;
     background-color: #fff;
     color: #333;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
+    margin-top: auto; /* Push to bottom */
     border-top: 3px solid #4f2a99;
 }
 
-/* Dark mode footer-like section */
-body.dark-mode .footer-section {
+/* Dark mode footer */
+body.dark-mode .footer {
     background-color: #333;
     color: #fff;
     border-top: 3px solid #6b3bd2;
 }
 
-.footer-section .contact-info h3 {
+/* Footer content styles */
+.footer .contact-info h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.footer-section .contact-info p {
+.footer .contact-info p {
     font-size: 18px;
 }
 
-.footer-section .contact-info a {
+.footer .contact-info a {
     color: #ffcc00;
     text-decoration: none;
 }
 
-.footer-section .contact-info a:hover {
+.footer .contact-info a:hover {
     text-decoration: underline;
 }
 
@@ -229,11 +225,11 @@ body.dark-mode .footer-section {
         width: 90px;
     }
 
-    .footer-section .contact-info h3 {
+    .footer .contact-info h3 {
         font-size: 20px;
     }
 
-    .footer-section .contact-info p {
+    .footer .contact-info p {
         font-size: 16px;
     }
 
