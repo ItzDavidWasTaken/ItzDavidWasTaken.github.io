@@ -231,6 +231,21 @@ body.dark-mode .footer {
     text-decoration: underline;
 }
 
+/* Ads Container Styling */
+.ads-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto; /* Centers the ad and gives some space around it */
+    padding: 10px;
+    background-color: #f4f4f9; /* Light background color to differentiate from content */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for a card-like effect */
+}
+
+.adsbygoogle {
+    display: block;
+    margin: 0 auto; /* Centers the ad */
+}
+
 /* Mobile-friendly adjustments */
 @media (max-width: 600px) {
     .container {
