@@ -157,14 +157,14 @@ body.dark-mode #theme-toggle {
     background-color: #6b3bd2;
 }
 
-/* Footer section */
+/* Footer Styling (Now a normal section) */
 .footer {
     width: 100%;
     background-color: #fff;
     color: #333;
     text-align: center;
     padding: 20px 0;
-    margin-top: auto; /* Push to bottom */
+    margin-top: 20px;
     border-top: 3px solid #4f2a99;
 }
 
@@ -175,7 +175,6 @@ body.dark-mode .footer {
     border-top: 3px solid #6b3bd2;
 }
 
-/* Footer content styles */
 .footer .contact-info h3 {
     font-size: 24px;
     margin-bottom: 10px;
