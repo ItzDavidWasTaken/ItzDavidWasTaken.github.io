@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Video Previews</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/videos.css') }}">
-    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <!-- Link to CSS inside static/css -->
+    <link rel="stylesheet" href="static/css/videos.css">
+    <!-- Link to JS inside static/js -->
+    <script src="static/js/script.js" defer></script>
 </head>
 <body>
     <div class="top-nav">
         <a href="/" class="home-button">
-            <img src="{{ url_for('static', filename='images/pfp.png') }}" alt="Home" class="home-image">
+            <!-- Link to image inside static/images -->
+            <img src="static/images/pfp.png" alt="Home" class="home-image">
         </a>
         <a href="/videos" class="videos-button">Videos</a>
         <a href="/links" class="videos-button">Links</a> <!-- Same class as Videos button -->
@@ -54,5 +57,21 @@
     
     <!-- Toggle Button for Dark/Light Mode -->
     <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const themeToggleButton = document.getElementById('theme-toggle');
+
+        themeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // Change the icon based on the current theme
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggleButton.textContent = '🌙☀️'; // Sun icon for light mode
+            } else {
+                themeToggleButton.textContent = '☀️'; // Moon icon for dark mode
+            }
+        });
+    </script>
 </body>
 </html>
