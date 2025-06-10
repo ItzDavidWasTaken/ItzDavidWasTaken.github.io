@@ -1,0 +1,56 @@
+* {
+    font-family: 'Century Gothic';
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    text-decoration: none;
+}
+
+html,body{
+    background-color:#bbbbbb
+}
+
+header {
+    background-color: #000000;
+    padding: 30px;
+    border-bottom: 3px #ffffff solid;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+#homebutton {
+    color: #757575;
+    width: fit-content;
+}
+
+#homebutton:hover{
+    color:#ffffff;
+    text-decoration:underline;
+    width: fit-content;
+}
+
+#linkbuttons {
+    color: #757575;
+    width: fit-content;
+    margin-top:10px
+  
+}
+
+#linkbuttons:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.flexbox-1 {
+    width: 100%;
+    display: flex;
+}
+
+.links{
+    text-align:right;
+    display:inline-flex;
+    margin-left:auto;
+    gap:20px
+}
