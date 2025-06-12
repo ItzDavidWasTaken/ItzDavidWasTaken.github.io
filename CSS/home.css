@@ -1,3 +1,8 @@
+/*===================================
+    Everything that hasnt been given
+    custom css or things that effect 
+    the main page
+ ==================================*/
 * {
     font-family: 'Century Gothic';
     padding: 0;
@@ -10,6 +15,10 @@ html,body{
     background-color:#bbbbbb
 }
 
+/*===================================
+            Main header
+ ==================================*/
+
 header {
     background-color: #000000;
     padding: 30px;
@@ -17,6 +26,7 @@ header {
     position: sticky;
     top: 0;
     overflow-y: auto;
+    z-index:10;
 }
 
 #homebutton {
@@ -54,3 +64,59 @@ header {
     margin-left:auto;
     gap:20px
 }
+
+/*===================================
+        All Project Redirects
+ ==================================*/
+
+.Projects{
+}
+.Projects h1 {
+    text-align: center;
+    font-size: 64px
+    }
+
+.project-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    overflow-y:hidden
+}
+
+.card {
+    background-color: #838383;
+    border: 3px #ffffff solid;
+    border-radius: 10px;
+    width: 960px;
+    height: 520px;
+    margin: 15px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.card img{
+    width: 80%;
+    height: auto;
+    border: 3px #ffffff solid;
+    border-radius: 10px;
+    margin:0,auto;
+}
+
+.card p{
+    font-size:16px;
+    margin:0,auto;
+    padding:8px;
+
+}
+.card a {
+    color: #000000;
+    font-size:22px;
+    margin:10px;
+    font-weight:bold;
+    }
+
