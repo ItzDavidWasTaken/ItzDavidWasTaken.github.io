@@ -63,3 +63,57 @@ header {
     margin-left: auto;
     gap: 20px
 }
+
+/*===================================
+        All Project Redirects
+ ==================================*/
+
+.Projects {
+}
+.Projects h1 {
+    text-align: center;
+    font-size: 64px
+}
+
+.project-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    overflow-y: hidden
+}
+
+.card {
+    background-color: #838383;
+    border: 3px #ffffff solid;
+    border-radius: 10px;
+    width: 640px;
+    height: 360px;
+    margin: 15px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.card img {
+    width: 70%;
+    height: auto;
+    border: 3px #ffffff solid;
+    border-radius: 10px;
+    margin: 0,auto;
+    }
+
+.card p {
+    font-size: 16px;
+    margin: 0,auto;
+    padding: 8px;
+}
+
+.card a {
+    color: #000000;
+    font-size: 22px;
+    margin: 10px;
+    font-weight: bold;
+}
