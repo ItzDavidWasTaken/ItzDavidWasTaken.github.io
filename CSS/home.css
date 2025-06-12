@@ -4,7 +4,6 @@
     the main page
  ==================================*/
 * {
-    font-family: 'Arial';
     padding: 0;
     margin: 0;
     height: fit-content;
@@ -20,6 +19,7 @@ html, body {
  ==================================*/
 
 header {
+    font-family: Arial;
     background-color: #000000;
     padding: 1.75rem;
     border-bottom: 0.25rem #ffffff solid;
@@ -72,11 +72,13 @@ header {
 }
 
     .Projects h1 {
+        font-family: Arial;
         text-align: center;
-        font-size: 4rem
+        font-size: 4rem;
     }
 
 .project-flexbox {
+    font-family:'Comic Sans MS' ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -85,12 +87,16 @@ header {
     overflow-y: hidden
 }
 
+.project-flexbox h1 {
+    font-size: 3rem;
+    }
+
 .card {
     background-color: #838383;
     border: 0.25rem #ffffff solid;
     border-radius: 0.75rem;
-    width: 42rem;
-    height: 32rem;
+    width: 52rem;
+    height: 34rem;
     margin: 1rem;
     padding: 0;
     text-align: center;
@@ -107,14 +113,14 @@ header {
     }
 
     .card p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: 0,auto;
-        padding: 0.5rem;
+        padding: 0rem;
     }
 
     .card a {
         color: #000000;
-        font-size: 1.5rem;
-        margin: 0.5rem;
+        font-size: 2.75rem;
+        margin: 3rem;
         font-weight: bold;
     }
