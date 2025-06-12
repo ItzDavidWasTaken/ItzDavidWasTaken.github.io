@@ -11,8 +11,8 @@
     text-decoration: none;
 }
 
-html,body{
-    background-color:#bbbbbb
+html, body {
+    background-color: #bbbbbb
 }
 
 /*===================================
@@ -26,7 +26,7 @@ header {
     position: sticky;
     top: 0;
     overflow-y: auto;
-    z-index:10;
+    z-index: 10;
 }
 
 #homebutton {
@@ -34,33 +34,32 @@ header {
     width: fit-content;
 }
 
-#homebutton:hover{
-    color:#ffffff;
-    text-decoration:underline;
-    width: fit-content;
-}
+    #homebutton:hover {
+        color: #ffffff;
+        text-decoration: underline;
+        width: fit-content;
+    }
 
 #linkbuttons {
     color: #757575;
     width: fit-content;
-    margin-top:10px
-  
+    margin-top: 10px
 }
 
-#linkbuttons:hover {
-    color: #ffffff;
-    text-decoration: underline;
-    width: fit-content;
-}
+    #linkbuttons:hover {
+        color: #ffffff;
+        text-decoration: underline;
+        width: fit-content;
+    }
 
 .flexbox-1 {
     width: 100%;
     display: flex;
 }
 
-.links{
-    text-align:right;
-    display:inline-flex;
-    margin-left:auto;
-    gap:20px
+.links {
+    text-align: right;
+    display: inline-flex;
+    margin-left: auto;
+    gap: 20px
 }
